@@ -91,6 +91,7 @@ NSString *WEIBO_USER_CANCEL_INSTALL = @"user cancel install weibo";
         }
         webpage.webpageUrl = [params objectForKey:@"url"];
         message.mediaObject = webpage;
+		message.text = [params objectForKey:@"defaultText"];
         NSUserDefaults *saveDefaults = [NSUserDefaults standardUserDefaults];
         NSString *token = [saveDefaults objectForKey:@"access_token"];
         WBSendMessageToWeiboRequest *request = [WBSendMessageToWeiboRequest requestWithMessage:message authInfo:authRequest access_token:token];
