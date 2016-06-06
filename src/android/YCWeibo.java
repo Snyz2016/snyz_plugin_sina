@@ -335,14 +335,14 @@ public class YCWeibo extends CordovaPlugin {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-		
+		/*
 		try {
             weiboMessage.mediaObject = getWebpageObj(params);
         } catch (JSONException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
+        */
         
 
         // 2. 初始化从第三方到微博的消息请求
