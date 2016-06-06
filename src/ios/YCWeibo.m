@@ -76,7 +76,7 @@ NSString *WEIBO_USER_CANCEL_INSTALL = @"user cancel install weibo";
         [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
         return;
     } else {
-        // if([WeiboSDK isWeiboAppInstalled]){
+        // if([WeiboSDK isWeiboAppInstalled]){		
         WBMessageObject *message = [WBMessageObject message];
         WBWebpageObject *webpage = [WBWebpageObject object];
         webpage.objectID = [NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]];
